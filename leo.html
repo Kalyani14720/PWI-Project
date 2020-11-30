@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Leo club
+    </title>
+    <link rel="stylesheet" href="club_pages.css">
+    <style type="text/css">
+         [data-component="slideshow"] .slide {
+    display: none;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+  }
+      </style>
+</head>
+<body>
+    <h1>LEO CLUB
+    <img src="leo1.png" alt="img" class="img1"/></h1>
+<h2>Aim / Vision of the Club</h2>
+    <p>Leadership: Leo members acquire skills as project organizers and motivators of their peers.
+Experience: They discover how teamwork and cooperation can bring about change in their community
+and the world.</p>
+<h2>Club activities</h2>
+<ul>
+    <li>PUB-G tournament</li>
+    <li>Uttar-Karnataka relief fund collection</li>
+    <li>Swachh Bharat</li>
+    <li>A-side mini cricket tournament</li>
+</ul>
+<a href="https://bit-bangalore.edu.in/wp-content/uploads/2020/11/9.LEO_CLUB.pdf">Click here to know more about events</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 30px;" src="insta.png" alt="img" class="image">
+<a href="https://www.instagram.com/leoclubbit/">Instagram page</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 100px;" src="facebook.png" alt="img" class="image">
+<a href="https://m.facebook.com/LEOCLUBBIT/">Facebook page</a>
+<div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="leo2.png" alt="img1" class="image">
+<div class="container">
+<p>Run for Hunger Event arranged by Leo Club in association with Lions Club</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="leo3.png" alt="img2" class="image">
+<div class="container">
+<p>A Side Mini Cricket Event</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="leo4.png" alt="img3" class="image">
+<div class="container">
+<p>Planting over 600 tree saplings inaugrated by renowned artist Shri Ashok</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="leo5.png" alt="img4" class="image">
+<div class="container">
+<p>Support provided to Coorg Floods by collecting donations</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="leo6.png" alt="img5" class="image">
+<div class="container">
+<p>Blood Donation Camp</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="leo7.png" alt="img6" class="image">
+<div class="container">
+<p>Team Leo</p>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+<div id="d2">
+    <h3>Staff coordinator details</h3>
+    <ul><li>
+    <p><pre>Dr Madhusudhan M
+madhubit04@gmail.com
+9964022693</pre></p> </li></ul>
+    <h3>Student coordinator details</h3>
+    <ul>
+    <li>
+    <p><pre>Srinivas Gowda SG
+srinivasgowdasg7@gmail.com
+9110293681, 7019690985</pre></p>
+</li>
+<li>
+<p><pre>Shreyas Jayram
+Shreyasjayram5@gmail.com
+9980946650</pre></p></li>
+</ul>
+</div>
+<script type="text/javascript">
+      var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+  
+  // Apply to all slideshows that you define with the markup wrote
+  slideshows.forEach(initSlideShow);
+
+  function initSlideShow(slideshow) {
+
+    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+
+    var index = 0, time = 2000;
+    slides[index].classList.add('active');  
+    
+    setInterval( () => {
+      slides[index].classList.remove('active');
+      
+      index++;
+      
+      if (index === slides.length) index = 0; 
+      
+      slides[index].classList.add('active');
+
+    }, time);
+  }
+    </script>
+
+</body>
+</html>

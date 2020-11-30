@@ -1,0 +1,70 @@
+body{
+  background-image: url("bg2.jpg");
+  color: white;
+  overflow: hidden;
+}
+h1{
+	text-align: center;
+	font-size: 60px;
+	text-shadow: 5px 5px 6px red;
+}
+h2{
+	text-shadow: 5px 5px 6px blue;
+	font-size:30px;
+}
+h3{
+	font-size: 26px;
+}
+p,ul{
+	font-size: 23px;
+}
+a{
+	color:green;
+	font-size: 23px;
+}
+#d2{
+	font-size:23px;
+	margin-left: 800px;
+	margin-top:-400px;
+	float: right;
+}
+.img1{
+	float: left;
+	width: 5%;
+	height: 5%;
+	margin-top:-13px;
+	margin-left:25px;
+	border-radius: 100px;
+}
+div.polaroid{
+			width: 80%;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);	
+			text-align: center;
+			padding: 10px 20px;
+		}
+div.container{
+			text-align: center;
+			padding: 10px 20px;
+
+		}
+.slide > div{
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	height:450px;
+	width: 450px;
+	max-height:100%;
+}
+.slide > div > img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50px;
+}
+.slide{
+	margin-left: 650px;
+	margin-top: -350px;
+	height:400px;
+	width: 450px;
+
+}

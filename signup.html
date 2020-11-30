@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Signup
+	</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <script type="text/javascript">
+      function confirm(){
+      var var1=document.getElementById("pwd").value;
+      var var2=document.getElementById("repwd").value;
+      if(var1!=var2){
+        alert("The password doesn't match");
+        return false;
+      }
+      else{
+        return true;
+      }
+    }
+    </script>
+		<h1>Signup</h1>	
+		<form style="background-color:white" onsubmit="return confirm()" action="signup.php" method="post">
+  <div class="imgcontainer">
+    <img src="icon.jpg" alt="img" class="image">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+    <label for="mail"><b>Email</b></label>
+    <input type="email" placeholder="Enter your mail id" name="mail" id="mail" required>
+
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required>
+
+    <label for="repwd"><b>Confirm password</b></label>
+    <input type="password" placeholder="Confirm Password" name="repwd" id="repwd" required>
+
+    <button type="submit" onclick="confirm()">Signup</button>
+    
+  </div>
+    
+</form>
+</body>
+</html>
