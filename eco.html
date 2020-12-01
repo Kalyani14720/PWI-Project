@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Eco club
+    </title>
+    <link rel="stylesheet" href="club_pages.css">
+    <style type="text/css">
+         [data-component="slideshow"] .slide {
+    display: none;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+  }
+      </style>
+</head>
+<body>
+    <h1>ECO CLUB
+    <img src="eco_logo.jpeg" alt="img" class="img1"/></h1>
+<h2>Aim / Vision of the Club</h2>
+    <p>To adopt the pace of nature, create awareness and uphold the values of eco system, to help in creating a cleaner BIT and to instil a sense of eco friendly character among all participants.</p>
+<h2>Club activities</h2>
+<ul>
+    <li>Plantation of saplings and placement of dustbins</li>
+    <li>Swacchatha Drive</li>
+    <li>Vollyball Tournment</li>
+</ul>
+<a href="https://bit-bangalore.edu.in/wp-content/uploads/2020/08/5.ECO-CLUB.pdf">Click here to know more about events</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 30px;" src="insta.png" alt="img" class="image">
+<a href="https://www.instagram.com/eco_club_bit_/?hl=en">Instagram page</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 100px;" src="facebook.png" alt="img" class="image">
+<a href="https://m.facebook.com/BITecoclub">Facebook page</a>
+<div id="id1" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="eco1.jpg" alt="img1" class="image">
+<div class="container">
+<p>Plantation drive in college</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="eco2.jpg" alt="img2" class="image">
+<div class="container">
+<p>Plantation drive in college</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="eco3.jpg" alt="img3" class="image">
+<div class="container">
+<p>Plantation drive in college</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="eco4.jpg" alt="img4" class="image">
+<div class="container">
+<p>Swachh BIT program</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="eco5.jpg" alt="img5" class="image">
+<div class="container">
+<p>Creating awareness to reduce plastic bag use</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="eco6.jpg" alt="img6" class="image">
+<div class="container">
+<p>Plantation drive</p>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+<div id="d2">
+    <h3>Staff coordinator details</h3>
+    <ul><li>
+    <p><pre>Dr Madhusudhan M
+madhubit04@gmail.com
+9964022693</pre></p> </li></ul>
+    <h3>Student coordinator details</h3>
+    <ul>
+    <li>
+    <p><pre>Srinivas Gowda SG
+srinivasgowdasg7@gmail.com
+9110293681, 7019690985</pre></p>
+</li>
+<li>
+<p><pre>Shreyas Jayram
+Shreyasjayram5@gmail.com
+9980946650</pre></p></li>
+</ul>
+</div>
+<input style="width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 20px;" type="button" onclick="location.href='member.html';" value="Be a member" />
+<script type="text/javascript">
+      var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+  
+  // Apply to all slideshows that you define with the markup wrote
+  slideshows.forEach(initSlideShow);
+
+  function initSlideShow(slideshow) {
+
+    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+
+    var index = 0, time = 2000;
+    slides[index].classList.add('active');  
+    
+    setInterval( () => {
+      slides[index].classList.remove('active');
+      
+      index++;
+      
+      if (index === slides.length) index = 0; 
+      
+      slides[index].classList.add('active');
+
+    }, time);
+  }
+    </script>
+
+</body>
+</html>

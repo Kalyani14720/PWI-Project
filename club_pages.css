@@ -44,10 +44,11 @@ div.polaroid{
 			padding: 10px 20px;
 		}
 div.container{
-			text-align: center;
-			padding: 10px 20px;
+		text-align: center;
+		padding: 10px 20px;
 
 		}
+
 .slide > div{
 	position: absolute;
 	max-width: 100%;

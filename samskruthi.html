@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Samskruthi club
+    </title>
+    <link rel="stylesheet" href="club_pages.css">
+    <style type="text/css">
+         [data-component="slideshow"] .slide {
+    display: none;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+  }
+      </style>
+</head>
+<body>
+    <h1>SAMSKRUTHI CLUB
+    <img src="sam_logo.jpg" alt="img" class="img1"/></h1>
+<h2>Aim / Vision of the Club</h2>
+    <p>To promote activities with respect to culture and traditions of Karnataka and in the honour of its regional language
+Kannada to create awareness amidst every person living their purpose in this state.</p>
+<h2>Club activities</h2>
+<ul>
+    <li>Kannada Rajyotsava</li>
+    <li>Kalachaitra</li>
+    <li>Drama competition</li>
+</ul>
+<a href="https://bit-bangalore.edu.in/wp-content/uploads/2020/11/3.Samskruthi-1.pdf">Click here to know more about events</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 30px;" src="insta.png" alt="img" class="image">
+<a href="https://instagram.com/samskruthi_bit_kannada_sangha?igshid=vm2kf3tj8iaa">Instagram page</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 100px;" src="facebook.png" alt="img" class="image">
+<a href="https://m.facebook.com/BITKannadaSangha/">Facebook page</a>
+<div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="sam1.jpg" alt="img1" class="image">
+<div class="container">
+<p>Kannada Rajyotsava</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="sam2.jpg" alt="img2" class="image">
+<div class="container">
+<p>Kannada Kalarava 2k19</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="sam3.jpg" alt="img3" class="image">
+<div class="container">
+<p>Ganesha Chaturthi</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="sam4.jpg" alt="img4" class="image">
+<div class="container">
+<p>Kannada Rajyotsava</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="sam5.jpg" alt="img5" class="image">
+<div class="container">
+<p>Art Work</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="sam6.jpg" alt="img6" class="image">
+<div class="container">
+<p>Kannada Rajyotsava</p>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+<div id="d2">
+    <h3>Staff coordinator details</h3>
+    <ul><li>
+    <p><pre>Dr. D. Nagaraja
+nagarajdd86@gmail.com
+9844303001</pre></p> </li></ul>
+    <h3>Student coordinator details</h3>
+    <ul>
+    <li>
+    <p><pre>Sumantha M Alse
+sumantha1995@gmail.com
+94807 07719</pre></p>
+</li>
+<li>
+<p><pre>Samrudh Moode
+samrudhmoode@gmail.com
+94833 52366</pre></p></li>
+</ul>
+</div>
+<input style="width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 20px;" type="button" onclick="location.href='member.html';" value="Be a member" />
+<script type="text/javascript">
+      var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+  
+  // Apply to all slideshows that you define with the markup wrote
+  slideshows.forEach(initSlideShow);
+
+  function initSlideShow(slideshow) {
+
+    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+
+    var index = 0, time = 2000;
+    slides[index].classList.add('active');  
+    
+    setInterval( () => {
+      slides[index].classList.remove('active');
+      
+      index++;
+      
+      if (index === slides.length) index = 0; 
+      
+      slides[index].classList.add('active');
+
+    }, time);
+  }
+    </script>
+
+</body>
+</html>

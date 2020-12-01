@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        IEDC club
+    </title>
+    <link rel="stylesheet" href="club_pages.css">
+    <style type="text/css">
+         [data-component="slideshow"] .slide {
+    display: none;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+  }
+      </style>
+</head>
+<body>
+    <h1>IEDC CLUB
+    <img src="edc_logo.jpg" alt="img" class="img1"/></h1>
+<h2>Aim / Vision of the Club</h2>
+    <p>Help students to change lives and achieve dreams through Innovation &
+Entrepreneurship.</h2>
+<h2>Activities</h2>
+<ul>
+    <li>Panel discussion on entrepreneurship</li>
+    <li>Entrepreneurial activities by students</li>
+    <li>Brainstorm 2.0</li>
+    
+</ul>
+<a href="https://bit-bangalore.edu.in/wp-content/uploads/2020/11/RCBIT-2020-JAN-JUNE.pdf">Click here to know more about events</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 30px;" src="insta.png" alt="img" class="image">
+<a href="https://www.instagram.com/iedcbit/?hl=en">Instagram page</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 100px;" src="facebook.png" alt="img" class="image">
+<a href="https://m.facebook.com/edcbitblr">Facebook page</a><br><br>
+<div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="edc1.jpg" alt="img1" class="image">
+<div class="container">
+<p>Various sessions to develop entrepreneurial skills</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="edc2.jpg" alt="img2" class="image">
+<div class="container">
+<p>Various sessions to develop entrepreneurial skills</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="edc3.jpg" alt="img3" class="image">
+<div class="container">
+<p>Various sessions to develop entrepreneurial skills</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="edc4.jpg" alt="img4" class="image">
+<div class="container">
+<p>Entrepreneurial activities by students</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="r5.jpg" alt="img5" class="image">
+<div class="container">
+<p>Brainstorm 2.0</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="r6.jpg" alt="img6" class="image">
+<div class="container">
+<p>Entrepreneurial activities by students</p>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+<div id="d2">
+    <h3>Staff coordinator details</h3>
+    <ul><li>
+    <p><pre>Prof. Krishna Prasad C. R.
+Masters in Business Administration</pre></p> </li></ul>
+    <h3>Student coordinator details</h3>
+    <ul>
+    <li>
+    <p><pre>Utkarsh Tiwari 
+Founder
+</pre></p>
+</li>
+<li>
+<p><pre>Kuzote Lohe 
+Former President & Advisor</pre></p></li>
+</ul>
+</div>
+<input style="width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 20px;" type="button" onclick="location.href='member.html';" value="Be a member" />
+<script type="text/javascript">
+      var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+  
+  // Apply to all slideshows that you define with the markup wrote
+  slideshows.forEach(initSlideShow);
+
+  function initSlideShow(slideshow) {
+
+    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+
+    var index = 0, time = 2000;
+    slides[index].classList.add('active');  
+    
+    setInterval( () => {
+      slides[index].classList.remove('active');
+      
+      index++;
+      
+      if (index === slides.length) index = 0; 
+      
+      slides[index].classList.add('active');
+
+    }, time);
+  }
+    </script>
+
+</body>
+</html>

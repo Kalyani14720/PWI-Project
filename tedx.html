@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        TEDx club
+    </title>
+    <link rel="stylesheet" href="club_pages.css">
+    <style type="text/css">
+         [data-component="slideshow"] .slide {
+    display: none;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+  }
+      </style>
+</head>
+<body>
+    <h1>TEDx CLUB
+    <img src="t_logo.jpg" alt="img" class="img1"/></h1>
+<h2>Aim / Vision of the Club</h2>
+    <p>An international movement dedicated to propagate the ideas of local communities to a global audience
+through independently organized TED-like events, meant to inspire conversation, prompt innovation
+and create connections.</p>
+<h2>Club activities</h2>
+<ul>
+    <li>Great talks</li>
+    <li>Creative activities</li>
+
+</ul>
+<a href="https://bit-bangalore.edu.in/wp-content/uploads/2020/11/2.TEDx-Report.pdf">Click here to know more about events</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 30px;" src="insta.png" alt="img" class="image">
+<a href="https://www.instagram.com/tedxbitbangalore/">Instagram page</a><br><br>
+<img style="width: 60px;height:60px; border-radius: 100px;" src="facebook.png" alt="img" class="image">
+<a href="https://m.facebook.com/TEDxBITbangalore/?tsid=0.11043951826565812&source=result">Facebook page</a>
+<div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="t1.jpg" alt="img1" class="image">
+<div class="container">
+<p>TEDx BIT</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="t2.jpg" alt="img2" class="image">
+<div class="container">
+<p>Team</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="t4.jpg" alt="img3" class="image">
+<div class="container">
+<p>Events</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="t5.jpg" alt="img4" class="image">
+<div class="container">
+<p>Great Talks</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="t6.jpg" alt="img5" class="image">
+<div class="container">
+<p>Great Talks</p>
+</div>
+</div>
+          </div>
+          <div class="slide">
+            <div class="polaroid">
+<img id="id1" src="t7.jpg" alt="img6" class="image">
+<div class="container">
+<p>Great Talks</p>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+<div id="d2">
+    <h3>Staff coordinator details</h3>
+    <ul><li>
+    <p><pre>S R Girish
+girishsram@gmail.com
+9900262772</pre></p> </li></ul>
+    <h3>Student coordinator details</h3>
+    <ul>
+    <li>
+    <p><pre>Darshan J
+jdarshan8100@gmail.com
+9902954675</pre></p>
+</li>
+<li>
+<p><pre>Rajath N
+iamrajath309@gmail.com
+8431750481</pre></p></li>
+</ul>
+</div>
+<input style="width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 20px;" type="button" onclick="location.href='member.html';" value="Be a member" />
+<script type="text/javascript">
+      var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+  
+  // Apply to all slideshows that you define with the markup wrote
+  slideshows.forEach(initSlideShow);
+
+  function initSlideShow(slideshow) {
+
+    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+
+    var index = 0, time = 2000;
+    slides[index].classList.add('active');  
+    
+    setInterval( () => {
+      slides[index].classList.remove('active');
+      
+      index++;
+      
+      if (index === slides.length) index = 0; 
+      
+      slides[index].classList.add('active');
+
+    }, time);
+  }
+    </script>
+
+</body>
+</html>
