@@ -1,13 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Registration</title>
-</head>
-<body>
-	<form action="member.php" method="post">
-		<input type="text" id="fname" name="fname" placeholder="Enter your full name"/>
-		<input type="number" id="phone" name="phone" placeholder="Enter your phone number"/>
-		<input type="radio" id="cse" name="cse"
-		</form>
-</body>
+    <head>
+        <title>Registration</title>
+        <style type="text/css">
+          table{
+            
+          }
+          form{
+            border-left: 10px solid black;
+          }
+          body{
+            color: white;
+            background-image: url("bg2.jpg");
+          }
+          tr{
+            padding: 2%;
+          }
+          div{
+            border: 15px solid green;
+            margin-left: 30%;
+            margin-right: 30%;
+            padding: 1%;
+          }
+          .button{
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+
+          }
+          h1{
+            text-align:center;
+            font-size: 60px;
+            text-shadow: 5px 5px 6px red;
+            color: white;
+          }
+          a{
+            color: white;
+          }
+          p{
+            font-size: 130%;
+          }
+        </style>
+    </head>
+    <body>
+      <h1>CLUB REGISTRATION</h1>
+      <div>
+        <table class="center">
+            <form action="member.php" method="post">
+               <tr>
+                   <td><label for="fname"><p>Full Name :</p></label></td>
+                   <td><input type="text" name="fname" id="fname" value=" "></td>
+               </tr> 
+               <tr>
+                <td><label for="phnum"><p>Phone :</p></label></td>
+                <td><input type="text" name="phone" id="phone" value=""></td>
+               </tr>
+               <tr>
+                <td><label for="email"><p>Email :</p></label></td>
+                <td><input type="email" name="mail" id="mail" value=""></td>
+               </tr>
+               <tr>
+               
+               
+                   <table style="border-collapse:collapse ;" class="center">
+      
+     <tr>
+                   <td colspan="4"><b><p>Academic Details</p></b></td>
+               </tr>
+              
+                       <tr>
+                           <td><p>Branch :</p></td>
+                           <td><select name="branch" id="branch">
+                        <option value="CSE">CSE</option>
+                        <option value="ISE">ISE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="MECHANICAL">MECHANICAL</option>
+                        <option value="IT">IT</option>
+                   </select></td>
+                             </tr>
+                           
+                       <tr>
+                           <td><p>Year :</p></td>
+                           <td><select name="year" id="year">
+                            <option value="1st year">1st YEAR</option>
+                        <option value="2nd year">2nd YEAR</option>
+                        <option value="3rd year">3rd YEAR</option>
+                        <option value="4th year">4th YEAR</option></select></td>
+                           
+                       </tr>
+                       <tr>
+                         <td><p>Section :</p></td>
+                         <td><select name="section" id="section" >
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option></select></td>
+                       </tr>
+                       <tr>
+                           <td><p>Club name :</p></td>
+                           <td><select name="cname" id="cname">
+                        <option value="leo club">Leo club</option>
+                        <option value="elevate club">Elevate club</option>
+                        <option value="eco club">Eco club</option>
+                        <option value="tedx club">TEDx club</option>
+                        <option value="samskruthi club">Samskruthi club</option>
+                        <option value="dance club">Dance club</option>
+                        <option value="iedc club">IEDC club</option>
+                        <option value="rotract club">Rotract club</option>
+                   </select></td>
+                             </tr>
+                   </table>
+                <br>
+                
+                    <!--<a class="a" href='mailto:priyankah243@gmail.com?subject=Access granted'>Submit</a>-->
+                    <button class="button" type="submit" onclick="location.href='login.html;'">Make payment</button><br><br>
+            </form>
+        </table>
+      </div>
+    </body>
 </html>

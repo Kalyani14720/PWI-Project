@@ -45,17 +45,25 @@
 			background-color: green;
 			border-radius: 20px;
 		}
+		#cl3{
+			width: 380px;
+			height: 50px;
+			font-size: 20px;
+			background-color: green;
+			border-radius: 20px;
+		}
 	</style>
 </head>
 <body>
 	<h1>CLUBS</h1>
+	<form action="home2.php" method="post">
 	<table>
 		<tr>
 			<td>
 				<div class="polaroid">
 				<img id="id1" src="leo.jpeg" alt="img" class="image">
 				<div class="container">
-					<input id="cl" type="button" onclick="location.href='leo.html';" value="Leo club" />
+					<input id="cl" type="submit" onclick="location.href='leo.html';" name="cn" id="cn" value="Leo club" />
 				</div>
 			</div>
 			</td>
@@ -63,7 +71,7 @@
 				<div class="polaroid">
 				<img id="id1" src="e_logo.jpg" alt="img" class="image">
 				<div class="container">
-					<input id="cl" type="button" onclick="location.href='elevate.html';" value="Elevate club" />
+					<input id="cl" type="button" onclick="location.href='elevate.html';" name="cn" id="cn" value="Elevate club" />
 				</div>
 			</div>
 			</td>
@@ -71,7 +79,7 @@
 				<div class="polaroid">
 				<img id="id1" src="eco_logo.jpeg" alt="img" class="image">
 				<div class="container">
-					<input id="cl" type="button" onclick="location.href='eco.html';" value="Eco club" />
+					<input id="cl" type="button" onclick="location.href='eco.html';" name="cn" value="Eco club" />
 				</div>
 			</div>
 			</td>
@@ -79,7 +87,7 @@
 				<div class="polaroid">
 				<img id="id1" src="t_logo.jpg" alt="img" class="image">
 				<div class="container">
-					<input id="cl" type="button" onclick="location.href='tedx.html';" value="TedX club" />
+					<input id="cl" type="button" onclick="location.href='tedx.html';" name="cn"  value="TedX club" />
 				</div>
 			</div>
 			</td>
@@ -123,5 +131,8 @@
 			</td>
 		</tr>
 	</table>
+	<input id="cl3" type="button" onclick="location.href='active.php';" value="Click here to know the most active clubs" />
+</form>
+
 </body>
 </html>
