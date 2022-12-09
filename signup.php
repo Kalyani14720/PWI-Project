@@ -9,6 +9,6 @@ if(mysqli_query($conn, $sql)) {
   	echo "<script>location.href='login.html';</script>";
 } else {
 	echo "<script>location.href='signup.html';alert('Username already exists');</script>";
-email_id=$_POST['mail'];
+email_id= $_POST['mail'];
 }
 ?>

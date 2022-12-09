@@ -1,15 +1,18 @@
 body{
-  background-image: url("bg2.jpg");
-  color: white;
+  background-image: url("clg1.jpg");
+  background-size: cover;
+  color: black;
   overflow: hidden;
+  margin-left: 10px;
 }
 h1{
 	text-align: center;
 	font-size: 60px;
-	text-shadow: 5px 5px 6px red;
+	text-shadow: 5px 5px 6px white;
 }
 h2{
-	text-shadow: 5px 5px 6px blue;
+	text-shadow: 5px 5px 6px white ;
+	margin-top: -10px;
 	font-size:30px;
 }
 h3{
@@ -17,9 +20,10 @@ h3{
 }
 p,ul{
 	font-size: 23px;
+	margin-top: -5px;
 }
 a{
-	color:green;
+	
 	font-size: 23px;
 }
 #d2{
@@ -35,6 +39,8 @@ a{
 	margin-top:-13px;
 	margin-left:25px;
 	border-radius: 100px;
+	margin-right: 10px;
+	
 }
 div.polaroid{
 			width: 80%;
@@ -44,6 +50,7 @@ div.polaroid{
 			padding: 10px 20px;
 		}
 div.container{
+
 		text-align: center;
 		padding: 10px 20px;
 

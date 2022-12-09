@@ -1,18 +1,19 @@
 body{
-  background-image: url("bg2.jpg");
+  background-image: url("clg1.jpg");
+  background-size: cover;
 }
 form {
   border: 3px solid #f1f1f1;
   margin-left: 350px;
   margin-right: 350px;
-  margin-top: 90px;
+  margin-top: 20px;
   
 }
 h1{
   text-align: center;
-  color: white;
+  color: black;
   font-size: 90px;
-  text-shadow: 5px 5px 6px red;
+  text-shadow: 5px 5px 6px white;
 }
 /* Full-width inputs */
 input[type=text], input[type=password], input[type=email] {
@@ -26,7 +27,7 @@ input[type=text], input[type=password], input[type=email] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: palevioletred;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
